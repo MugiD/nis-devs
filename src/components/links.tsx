@@ -1,16 +1,27 @@
+'use client'
+
 import { BiLinkAlt } from "react-icons/bi";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { IoLogoDiscord } from "react-icons/io5";
 import React from "react";
+import { motion } from 'framer-motion'
 
 export default function Links() {
   return (
-    <div className="mt-24 text-[#9C9C9C]" id="links">
+    <motion.div
+      className="mt-24 text-[#9C9C9C]"
+      id="links"
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="flex gap-x-4">
         <BiLinkAlt className="text-[#fed448] md:w-[60px] md:h-[60px] w-[40px] h-[40px]" />
-        <h1 className="font-bold md:text-[40px] text-white text-[30px]">Связаться</h1>
+        <h1 className="font-bold md:text-[40px] text-white text-[30px]">
+          Связаться
+        </h1>
       </div>
-      <p className="md:text-[28px] mt-2 mb-10 text-[20px]">
+      <p className="md:text-[28px] mt-2 mb-10 text-[20px] text-[#c1c1c1]">
         Так вы станете частью нашего коммьюнити!
       </p>
       <div className="flex justify-between">
@@ -45,6 +56,6 @@ export default function Links() {
           <p>Discord</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
