@@ -11,8 +11,8 @@ export default function Goals() {
         <p className="text-[#9C9C9C] md:text-[28px] text-[20px] mt-2 mb-10">
           С вами мы сможем их достичь!
         </p>
-        <div className="flex md:flex-row flex-col justify-between items-center">
-          <p className="text-[#9c9c9c] md:text-[20px] text-[16px] leading-[60px] md:mb-0 mb-6">
+        <div className="md:flex justify-between items-center">
+          <p className="text-[#9c9c9c] md:text-[20px] text-[16px] md:leading-[60px] leading-[40px] md:mb-0 mb-6">
             {">"} Постить интересный контент в{" "}
             <a
               href="https://instagram.com/nis.devs"
@@ -35,7 +35,7 @@ export default function Goals() {
             <br />
             {">"} Собрать коммьюнити developer’ов НИШ
           </p>
-          <img src="/growth.png" alt="growth" />
+          <img src="/growth.png" alt="growth" className='mx-auto md:mx-0'/>
         </div>
       </div>
   )
