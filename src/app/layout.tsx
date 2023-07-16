@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
       <html lang="en">
         <body className={noto.className}>
-          <main className="max-w-[70%] m-auto">
+          <main className="md:max-w-[70%] max-w-[90%] mx-auto">
           <Header />
           {children}
           </main>
