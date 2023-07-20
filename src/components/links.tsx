@@ -3,13 +3,12 @@
 import { BiLinkAlt } from "react-icons/bi";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 import { IoLogoDiscord } from "react-icons/io5";
-import React from "react";
 import { motion } from 'framer-motion'
 
 export default function Links() {
   return (
     <motion.div
-      className="mt-24 text-[#9C9C9C]"
+      className="mt-24 py-6 text-[#9C9C9C]"
       id="links"
       initial={{ y: 10, opacity: 0 }}
       whileInView={{ y: 0, opacity: 1 }}
