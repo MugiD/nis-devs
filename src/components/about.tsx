@@ -1,16 +1,15 @@
-'use client'
-
-import React from "react";
+"use client";
 import { motion } from "framer-motion";
 
 export default function About() {
   return (
     <motion.div
-     className="text-white mt-24"
+      className="text-white mt-24 py-6"
       id="about"
-      initial={{y: 10, opacity: 0}}
-      whileInView={{y: 0, opacity: 1}}
-      transition={{duration: 0.8}}>
+      initial={{ y: 10, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8 }}
+    >
       <h1 className="lg:text-[40px] text-[24px] font-semibold lg:mb-6 mb-2">
         nis.devs — коммьюнити разработчиков со всех сфер Назарбаев
         Интеллектуальной Школы

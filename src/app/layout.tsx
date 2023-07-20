@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Noto_Sans } from "next/font/google";
-import Header from '@/components/header';
+import Header from "@/components/header";
 import Footer from "@/components/footer";
 
 const noto = Noto_Sans({
@@ -22,14 +22,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      <html lang="en">
-        <body className={noto.className}>
-          <main className="md:max-w-[70%] max-w-[90%] mx-auto">
+    <html lang="en">
+      <body className={noto.className}>
+        <main className="md:max-w-[70%] max-w-[90%] mx-auto">
           <Header />
           {children}
           <Footer />
-          </main>
-          </body>
-      </html>
+        </main>
+      </body>
+    </html>
   );
 }
